@@ -1,4 +1,4 @@
 Utilities
 =========
 
-Usefull categories
+This repository has various categories that might be useful.
