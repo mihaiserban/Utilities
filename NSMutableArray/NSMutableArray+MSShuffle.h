@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+MSQueue
+//  NSMutableArray+MSShuffle.h
 //  Utility categories for iOS
 //
 //  Created by Mihai Serban on 4/16/13.
@@ -7,13 +7,11 @@
 //  Distribuited under MIT License
 //
 
-#import <CoreLocation/CoreLocation.h>
 
-@interface NSMutableArray (MSQueue)
+#import <Foundation/Foundation.h>
 
-- (id)queueHead;
-- (__autoreleasing id)dequeue;
-- (id)pop;
-- (void)enqueue:(id)object;
+@interface NSMutableArray (MSShuffle)
+
+-(void)shuffle;
 
 @end

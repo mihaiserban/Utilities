@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+MSQueue
+//  NSString+MSNumeric.h
 //  Utility categories for iOS
 //
 //  Created by Mihai Serban on 4/16/13.
@@ -7,13 +7,10 @@
 //  Distribuited under MIT License
 //
 
-#import <CoreLocation/CoreLocation.h>
+#import <Foundation/Foundation.h>
 
-@interface NSMutableArray (MSQueue)
+@interface NSString (MSNumeric)
 
-- (id)queueHead;
-- (__autoreleasing id)dequeue;
-- (id)pop;
-- (void)enqueue:(id)object;
+- (BOOL)isNumeric;
 
 @end

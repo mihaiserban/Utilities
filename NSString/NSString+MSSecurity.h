@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+MSQueue
+//  NSString+MSSecurity.h
 //  Utility categories for iOS
 //
 //  Created by Mihai Serban on 4/16/13.
@@ -7,13 +7,12 @@
 //  Distribuited under MIT License
 //
 
-#import <CoreLocation/CoreLocation.h>
+#import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonDigest.h>
 
-@interface NSMutableArray (MSQueue)
+@interface NSString (MSSecurity)
 
-- (id)queueHead;
-- (__autoreleasing id)dequeue;
-- (id)pop;
-- (void)enqueue:(id)object;
+-(NSString*)MD5;
+-(NSString*)SHA1;
 
 @end
