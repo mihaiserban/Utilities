@@ -13,5 +13,6 @@
 
 +(id)appDelegate;
 +(BOOL)isIpad;
++(NSString *)applicationDocumentsDirectory;
 
 @end
