@@ -1,5 +1,5 @@
 //
-//  MSUIView+Layout.h
+//  UIView+MSLayout.h
 //  Utility categories for iOS
 //
 //  Created by Mihai Serban on 4/16/13.
@@ -7,7 +7,7 @@
 //  Distribuited under MIT License
 //
 
-#import "MSUIView+Layout.h"
+#import "UIView+MSLayout.h"
 
 @implementation UIView (Layout)
 
@@ -91,7 +91,7 @@
 
 -(void)removeAllSubviews
 {
-  [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
+    [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
 }
 
 -(UIView*)viewWithTag:(NSUInteger)tag
