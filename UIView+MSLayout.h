@@ -1,5 +1,5 @@
 //
-//  MSUIView+Layout.h
+//  UIView+MSLayout.h
 //  Utility categories for iOS
 //
 //  Created by Mihai Serban on 4/16/13.
