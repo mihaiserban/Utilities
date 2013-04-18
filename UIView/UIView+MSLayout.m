@@ -89,6 +89,20 @@
     return self.frame.size.height;
 }
 
+-(void)incrementX:(CGFloat)x
+{
+    CGRect f = [self frame];
+    f.origin.x += x;
+    [self setFrame:f];
+}
+
+-(void)decrementX:(CGFloat)x
+{
+    CGRect f = [self frame];
+    f.origin.x -= x;
+    [self setFrame:f];
+}
+
 -(void)removeAllSubviews
 {
     [self.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
