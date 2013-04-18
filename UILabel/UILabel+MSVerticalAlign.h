@@ -7,11 +7,21 @@
 //  Distribuited under MIT License
 //
 
+// vertical alignment values
+typedef enum UITextVerticalAlignment {
+    UITextVerticalAlignmentTop,
+    UITextVerticalAlignmentMiddle,
+    UITextVerticalAlignmentBottom
+} UITextVerticalAlignment;
+
 #import <UIKit/UIKit.h>
 
 @interface UILabel (MSVerticalAlign)
 
-- (void)alignTop;
-- (void)alignBottom;
+// getter
+-(UITextVerticalAlignment)textVerticalAlignment;
+
+// setter
+-(void)setTextVerticalAlignment:(UITextVerticalAlignment)textVerticalAlignment;
 
 @end
