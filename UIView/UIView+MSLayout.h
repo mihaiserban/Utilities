@@ -18,6 +18,9 @@
 @property(assign) CGFloat width;
 @property(assign) CGFloat height;
 
+-(void)incrementX:(CGFloat)x;
+-(void)decrementX:(CGFloat)x;
+
 -(void)removeAllSubviews;
 -(UIView*)viewWithTag:(NSUInteger)tag;
 @end
